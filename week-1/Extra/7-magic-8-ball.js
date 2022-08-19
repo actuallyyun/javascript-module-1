@@ -43,9 +43,41 @@ Outlook not so good.
 Very doubtful.
 */
 
+answersVeryPositive = ["It is certain.",
+  "It is decidedly so.", "Without a doubt.",
+  "Yes - definitely.",
+  "You may rely on it.",]
+answersPositive = [
+  "As I see it, yes.",
+  "Most likely.",
+  "Outlook good.",
+  "Yes.",
+  "Signs point to yes."
+
+]
+answersNegative = [
+  "Reply hazy, try again.",
+  "Ask again later.",
+  "Better not tell you now.",
+  "Cannot predict now.",
+  "Concentrate and ask again."
+
+]
+
+answersVeryNegative = [
+  "Don't count on it.",
+  "My reply is no.",
+  "My sources say no.",
+  "Outlook not so good.",
+  "Very doubtful."
+]
+
+answersAll = answersVeryPositive.concat(answersPositive, answersNegative, answersVeryNegative)
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
+  console.log("The ball has shaken!")
+  return answersAll[Math.floor(Math.random() * answersAll.length)]
 }
 
 // This function should say whether the answer it is given is
@@ -55,6 +87,16 @@ function shakeBall() {
 // - very negative
 // This function should expect to be called with any value which was returned by the shakeBall function.
 function checkAnswer(answer) {
+  if (answersVeryPositive.includes(answer)) {
+    return "very positive"
+  } else if (answersPositive.includes(answer)) {
+    return "positive"
+  } else if (answersVeryNegative.includes(answer)) {
+    return "very negative"
+  } else {
+    return "negative"
+  }
+
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
@@ -65,7 +107,7 @@ To run these tests type `node 3-magic-8-ball.js` into your terminal
 
 const log = console.log;
 let logged;
-console.log = function() {
+console.log = function () {
   log(...arguments);
   logged = arguments[0];
 };
