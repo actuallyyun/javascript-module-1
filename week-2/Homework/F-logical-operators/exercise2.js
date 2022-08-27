@@ -5,7 +5,30 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative() {}
+function isNegative(num) {
+  if (num < 0) {
+    return true
+  } else {
+    return false
+  }
+}
+
+//Is there a way to write this in one line??
+function isBetween5and10(num) {
+  return ((num >= 5 && num <= 10) ? true : false)
+}
+
+function isShortName(name) {
+  if (name.length > 10) {
+    return false
+  } else {
+    return true
+  }
+}
+
+function startsWithD(name) {
+  return (name[0] === 'D' ? true : false)
+}
 
 /* 
   DO NOT EDIT BELOW THIS LINE
