@@ -7,3 +7,4 @@ To challenge yourself even further, you can get ahead for next week's class by r
 - [ ] Comparisons in JS: https://javascript.info/comparison
 - [ ] Logical operators in JS: https://javascript.info/logical-operators
 - [ ] More on operators: https://javascript.info/operators
+ 
