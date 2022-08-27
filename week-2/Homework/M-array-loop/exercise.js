@@ -16,7 +16,8 @@ const daysOfWeek = [
 
 
 function stringWithT(array) {
-  for (i = 0, i < array.length; i++;) {
+
+  for (i = 0; i < array.length; i++) {
     if (array[i][0] === "T") {
       console.log(array[i])
     }
