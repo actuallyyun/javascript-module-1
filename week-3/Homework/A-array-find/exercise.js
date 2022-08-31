@@ -5,11 +5,23 @@
 
 // write your code here
 
-var names = ["Rakesh", "Antonio", "Alexandra", "Andronicus", "Annam", "Mikey", "Anastasia", "Karim", "Ahmed"];
+let names = ["Rakesh", "Antonio", "Alexandra", "Andronicus", "Annam", "Mikey", "Anastasia", "Karim", "Ahmed"];
 
-var longNameThatStartsWithA = findLongNameThatStartsWithA(names);
+const longNameThatStartsWithA = findLongNameThatStartsWithA(names);
+
+function findLongNameThatStartsWithA(names) {
+  return names.find(name => name[0] === "A" && name.length > 7)
+}
+
+//In one line
+
+const longNameThatStartsWithA_2 = names.find(name => name[0] === "A" && name.length > 7)
 
 console.log(longNameThatStartsWithA);
+console.log(longNameThatStartsWithA_2)
+
+
+
 
 /* EXPECTED OUTPUT */
 // "Alexandra"
