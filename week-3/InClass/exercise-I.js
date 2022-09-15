@@ -1,4 +1,4 @@
-const messyArray = [
+const messyStrings = [
     100,
     "iSMael",
     55,
@@ -12,8 +12,11 @@ const messyArray = [
     67,
     19,
     "ElaMIN",
-  ];
-function cleaningUp(array){
-    return array.filter(string => typeof string == "string").map(e=> `${e.toUpperCase()}`)
-}
- console.log(cleaningUp(messyArray));
+];
+
+
+const yelling = messyStrings.filter(s => typeof (s) === "string")
+    .map(e => `${e.toUpperCase()}!`)
+    .sort()
+
+console.log(yelling)

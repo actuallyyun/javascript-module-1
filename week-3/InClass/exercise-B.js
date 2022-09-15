@@ -1,21 +1,17 @@
-const groupOfPeople =["Ali", "Moazum", "AB", "Lucia", "Nono"];
-const secondGroup =["Seba", "Musti", "Salman", "Lucky"];
+let myClass = ['Hanna', 'Zakaria', 'Lucia', 'Muazza']
+let anotherClass = ['Bob', 'Jane', 'Linda', 'Sara']
 
 
-const allPeople=groupOfPeople.concat(secondGroup);
-//allPeople.splice(0, 0, "NewName");
-allPeople.sort();
-console.log(allPeople);
- const array=["AB", "Musti", "ALi", "Salman"];
-function checkIfInTheArray(name, array){
-if(array.includes(name)){ 
-   
-    return `${name} is in the class with ${array} `
-  }else{
-    
-    return `${name} is not in the class with ${array.join(", ")}` 
-  }
+let allClass = myClass.concat(anotherClass)
+console.log(allClass.sort())
+
+function isNameHere(name, arrayOfNames) {
+    if (arrayOfNames.includes(name)) {
+        return `${name} is at the class with ${arrayOfNames.join(", ")}`
+    } else {
+        return `${name} is not at the class with ${arrayOfNames.join(",  ")}`
+    }
 }
 
-console.log(checkIfInTheArray("AB",array))
-console.log(checkIfInTheArray("Linda",array))
+console.log(isNameHere('Tim', allClass))
+console.log(isNameHere('Bob', allClass))

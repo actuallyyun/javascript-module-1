@@ -4,16 +4,24 @@
 */
 
 // write your code here
-function findNameWithA(names){
 
-  return names.find(e =>  e.length > 7 && e[0] === "A")
+let names = ["Rakesh", "Antonio", "Alexandra", "Andronicus", "Annam", "Mikey", "Anastasia", "Karim", "Ahmed"];
+
+const longNameThatStartsWithA = findLongNameThatStartsWithA(names);
+
+function findLongNameThatStartsWithA(names) {
+  return names.find(name => name[0] === "A" && name.length > 7)
 }
 
-var names = ["Rakesh", "Antonio", "Alexandra", "Andronicus", "Annam", "Mikey", "Anastasia", "Karim", "Ahmed"];
+//In one line
 
-var longNameThatStartsWithA = findNameWithA(names);
+const longNameThatStartsWithA_2 = names.find(name => name[0] === "A" && name.length > 7)
 
 console.log(longNameThatStartsWithA);
+console.log(longNameThatStartsWithA_2)
+
+
+
 
 /* EXPECTED OUTPUT */
 // "Alexandra"

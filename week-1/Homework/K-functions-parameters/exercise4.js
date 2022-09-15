@@ -1,9 +1,10 @@
 // Declare your function first
-function sum(x,y){
-    return  x+y;
+
+function summ(num1, num2) {
+    return num1 + num2
 }
 
 // Call the function and assign to a variable `sum`
 
-var result = sum(3, 4);
-console.log(result);
+const sum = summ(12, 123)
+console.log(sum);

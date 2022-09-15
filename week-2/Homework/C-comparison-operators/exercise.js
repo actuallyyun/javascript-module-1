@@ -5,17 +5,17 @@
   The variables should have values that match the expected results.
 */
 
-var studentCount = 15;
+var studentCount = 10;
 var mentorCount = 9;
-var moreStudentsThanMentors= studentCount>mentorCount; // finish this statement
+var moreStudentsThanMentors = studentCount > mentorCount;// finish this statement
 
 var roomMaxCapacity = 25;
-var enoughSpaceInRoom= roomMaxCapacity== studentCount+mentorCount; // finish this 
-// TODO IT SHOULD ALSO RETURN TRUE IF THERE ARE LESS PEOPLE THAN CAPACITY
+var enoughSpaceInRoom = roomMaxCapacity <= (studentCount + mentorCount); // finish this statement
+// TODO TRUE WHEN MAXCAPACITY EXCEEDED
 
 var personA = "Daniel";
 var personB = "Irina";
-var sameName= personA==personB ;// finish this statement
+var sameName = personA === personB; // finish this statement
 
 /* 
   DO NOT EDIT BELOW THIS LINE

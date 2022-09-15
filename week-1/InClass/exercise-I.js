@@ -1,16 +1,6 @@
-function birthYear(age) {
-    const currentYear = 2022;
-    let birthYear = currentYear - age;
-    return birthYear
+function bithYear(age, name) {
+    bithYear = 2022 - age
+    return `${name} was born in year ${bithYear}`
 }
-let year = birthYear(25)
-console.log(year);
 
-//function take name and age and display a message with name, age and birth year in sentence
-
-function statement(name, age) {
-    let statement = `hi, i am ${name} i am ${age} years old, i was born in ${year}`;
-    return statement
-}
-let answer = statement("Abubaker", 25)
-console.log(answer)
+console.log(birthYear(20, "Laila"))

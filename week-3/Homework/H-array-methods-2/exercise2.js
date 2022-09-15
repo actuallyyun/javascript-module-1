@@ -8,9 +8,9 @@
 */
 
 function capitalise(str) {
-  const string= str.split("")
-  string[0]=string[0].toUpperCase()
-  return string.join("")
+  const strArray = str.split('')
+  strArray[0] = strArray[0].toUpperCase()
+  return strArray.join('')
 }
 
 /* 

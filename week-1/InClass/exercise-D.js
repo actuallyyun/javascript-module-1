@@ -1,13 +1,8 @@
+const colors = ["blue", "yelllow"]
 
+const colorsType = typeof colors
+console.log(colorsType)
 
+const num = 5
 
-
-const colors="blue and yellow";
-const messageType = typeof colors;
-
-
-console.log(messageType);
-
-let x = 42;
-let numbertype =typeof x;
-console.log(numbertype);
+console.log(typeof num)

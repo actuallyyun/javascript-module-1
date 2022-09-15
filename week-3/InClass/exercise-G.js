@@ -1,5 +1,3 @@
-const birthYears = [1964, 2008, 1999, 2005, 1978, 1985, 1919]
-
 function age(birthYear) {
     return 2022 - birthYear
 }
@@ -13,9 +11,11 @@ function canYouDrive(birthYear) {
     }
 }
 
+const birthYears = [1964, 2008, 1999, 2005, 1978, 1985, 1919]
 
 
 birthYears.map(canYouDrive)
+
 
 const peopleCanDrive = birthYears.filter(year => age(year) > 17)
 

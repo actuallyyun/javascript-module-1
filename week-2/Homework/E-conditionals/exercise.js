@@ -6,16 +6,15 @@
   If Daniel is a student, print out "Hi, I'm Daniel, I'm a student."
 */
 
-// TODO THERE SHOULD BE A VARIABLE CALLED isMentor = true;
 var name = "Daniel";
-var danielsRole = "mentor";
-if (danielsRole=="mentor"){
-  console.log(`Hi, i'm ${name},I'm a ${danielsRole}`)
-}
-  else if(danielsRole=="student"){ 
-console.log(`Hi,i'm ${name},I'm a ${danielsRole}`)
+var danielsRole = "mentor"; // TODO BETTER WITH BOOLEAN
 
+if (danielsRole === "mentor") {
+  console.log("Hi, I'm Daniel, I'm a mentor.")
+} else {
+  console.log("Hi, I'm Daniel, I'm a student.")
 }
+
 /* 
 EXPECTED RESULT
 ---------------

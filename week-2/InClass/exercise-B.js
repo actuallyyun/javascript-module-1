@@ -1,9 +1,9 @@
 function boolChecker(bool) {
-  if (typeof bool === 'boolean') {
+  if (typeof bool === true) {
     return "You've given me a bool, thanks!";
   }
-else{
+
   return "No bool, not cool.";
 }
-}
-console.log(boolChecker(true));
+
+boolChecker(true);

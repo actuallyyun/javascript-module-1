@@ -1,5 +1,7 @@
-let greeting = "Salam";
+let greeting = "Hello"
 
-console.log(greeting , "Abubaker");
-console.log(greeting ,"Ali");
-console.log(greeting , "Moazum");
+console.log(greeting)
+
+console.log(greeting)
+
+console.log(greeting)
