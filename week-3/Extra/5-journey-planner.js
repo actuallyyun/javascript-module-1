@@ -7,18 +7,7 @@
   NOTE: only the names should be returned, not the means of transport.
 */
 
-function journeyPlanner(arr, transport) {
-  let result = [];
-  arr.forEach(el => {
-    if (el.includes(transport)) {
-      result.push(el[0])
-    }
-  })
-  return result
-}
-
-function journeyPlanner(arr, transport) {
-  return arr.filter(el => el.includes(transport)).map(el => el = el[0])
+function journeyPlanner() {
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
@@ -33,14 +22,14 @@ const londonLocations = [
 const util = require('util');
 
 function test(test_name, actual, expected) {
-  let status;
-  if (util.isDeepStrictEqual(actual, expected)) {
-    status = "PASSED";
-  } else {
-    status = `FAILED: expected: ${util.inspect(expected)} but your function returned: ${util.inspect(actual)}`;
-  }
+    let status;
+    if (util.isDeepStrictEqual(actual, expected)) {
+        status = "PASSED";
+    } else {
+        status = `FAILED: expected: ${util.inspect(expected)} but your function returned: ${util.inspect(actual)}`;
+    }
 
-  console.log(`${test_name}: ${status}`);
+    console.log(`${test_name}: ${status}`);
 }
 
 test(

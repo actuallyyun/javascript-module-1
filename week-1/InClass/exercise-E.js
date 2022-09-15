@@ -1,8 +1,10 @@
-const greeting = "Hello";
-const myName = "Hanna";
+const greetingStart = "Hello, my name is ";
+const myname = "Abubaker";
 
-const greetingMessage_1 = greeting + " " + myName;
-const greetingMessage_2 = `${greeting} ${myName}`;
+const greeting = greetingStart + myname;
 
-console.log(greetingMessage_1);
-console.log(greetingMessage_2);
+console.log(greeting); // First Method
+
+const greetings = `${greetingStart} ${myname}`;
+
+console.log(greetings); // Second Method

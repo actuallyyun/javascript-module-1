@@ -48,26 +48,13 @@ Very doubtful.
 function shakeBall() {
 }
 
-
 // This function should say whether the answer it is given is
 // - very positive
 // - positive
 // - negative
 // - very negative
 // This function should expect to be called with any value which was returned by the shakeBall function.
-
-
 function checkAnswer(answer) {
-  
-  if (answer === "It is certain." || "It is decidedly so." || "Without a doubt." || "Yes - definitely." || "You may rely on it.") {
-     return "very positive";
-   } else if  (answer === "As I see it, yes." || "Most likely." || "Outlook good." || "Yes." || "Signs point to yes.") {
-    return "positive";
-   } else if (answer === "Reply hazy, try again." || "Ask again later." || "Better not tell you now." || "Cannot predict now." || "Concentrate and ask again.") {
-    return "negative";
-   } else {
-    return "very negative";
-   } 
 }
 
 /* ======= TESTS - DO NOT MODIFY =====

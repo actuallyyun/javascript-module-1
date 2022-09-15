@@ -1,8 +1,9 @@
+
 function secondMatchesAmy(array) {
-  if (array[1] === "Amy" ) {
+  if (array=="Amy" ) {
     return "Second index matched!";
   }
   return "Second index not matched";
 }
-
-console.log(secondMatchesAmy(["amm", "Amy", "ddddd"]))
+console.log(secondMatchesAmy("Amy"))
+console.log(secondMatchesAmy("No pne"))

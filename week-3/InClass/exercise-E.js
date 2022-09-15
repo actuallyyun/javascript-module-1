@@ -1,14 +1,15 @@
-function magician(yourFunc) {
+const birthYears = [1964, 2008, 1999, 2005, 1978, 1985, 1919]
 
-    const years = [1964, 2008, 1999, 2005, 1978, 1985, 1919]
-
-    const magicOutput = yourFunc(years);
-
-    return magicOutput;
+function age(birthYear){
+  const currentYear = new Date().getFullYear() // gives you do full current date and you can extract the year by using a Date method .getFullYear()
+  return currentYear - birthYear // if we deduct the birht year from current year we get and return the age
 }
 
-function superArr(arr) {
-    return arr.map(year => 2022 - year)
+// we want to iterate over all the years(stored in an array) and call our prepared age function on every element
+
+function ageArray(array){
+  return array.map(age) // you pass your prepared function as an argument and it is called by it, map creates a new array
 }
 
-console.log(magician(superArr))
+console.log(ageArray(birthYears));
+

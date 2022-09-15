@@ -1,8 +1,22 @@
-const names = ["Daniel", "James", "Irina", "Mozafar", "Ashleigh"];
 
-function myName(name) {
-    return names.includes(name) ? "Found me!!" : "Have not found me (("
-}
 
-console.log(myName("Anna"))
-console.log(myName("Mozafar"))
+    const namesArray = [
+        "James",
+        "Elamin",
+        "Ismael",
+        "Sanyia",
+        "Chris",
+        "Antigoni",
+      ];
+    
+ 
+    
+      // the same but written with ternary operator
+      function checkName_2(name, array){
+        return array.includes(name) ? "Found me" : "Havent found me"
+      }
+    
+      // with .find()
+    
+ 
+      console.log(checkName_2("James", namesArray));

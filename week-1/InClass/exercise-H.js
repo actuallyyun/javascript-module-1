@@ -1,10 +1,5 @@
-function addF(string1, string2) {
-
-    return string1 + string2;
+function greeting (name,age){
+    const myGreeting = `Hi my name is ${name},I am ${age} Years Old`;
+    console.log(myGreeting);
 }
-
-// new function concatenates
- 
-const result = addF("dd", "ss");
-
-console.log(result)
+greeting ("AB",25);

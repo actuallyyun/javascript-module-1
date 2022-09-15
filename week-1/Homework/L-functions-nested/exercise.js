@@ -3,21 +3,19 @@ var mentor2 = "Irina";
 var mentor3 = "Mimi";
 var mentor4 = "Rob";
 var mentor5 = "Yohannes";
+function spellUpperCase(name){
+    let mentorUpperCase = name.toUpperCase();
+    
+    return mentorUpperCase;
+}
+function greetingMentors(name){
 
-let arr = [mentor1, mentor2, mentor3, mentor4, mentor5];
-
-function sayName(name) {
-    return name.toUpperCase();   
+    console.log(`HELLO,${spellUpperCase(name)}`)
 }
 
-function createGreeting(name) {
-    let upperName = sayName(name);
-    let message = `HELLO ${upperName}`
-    return  message;
-}
+greetingMentors(mentor1);
+greetingMentors(mentor2);
+greetingMentors(mentor3);
+greetingMentors(mentor4);
+greetingMentors(mentor5);
 
-
-for (let i = 0; i < arr.length;  i++) {
-    let greeting = createGreeting(arr[i]);
-    console.log(greeting);
-}

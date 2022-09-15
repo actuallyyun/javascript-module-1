@@ -23,18 +23,8 @@ PasswordValidationResult=  [false, false, false, false, true]
 */
 
 function validatePasswords(passwords) {
-  let corrPassword = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!#$%&.*])[a-zA-Z0-9!#$%&.*]{5,}$/;
 
-  return passwords.map((password, index) => passwords.slice(0, index).includes(password) ? password = false : password = corrPassword.test(password))
 }
-
-// (/^
-// (?=.*\d)                //should contain at least one number
-// (?=.*[a-z])             //should contain at least one lower case
-// (?=.*[A-Z])             //should contain at least one upper case
-// (?=.*[!#$%&.*])         //should contain at least one non-alphanumeric symbol ("!", "#", "$", "%", ".", "*", "&")
-// [a-zA-Z0-9!#$%&.*]{5,}         //should contain at least 5 from the mentioned characters
-// $/)
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
@@ -44,21 +34,21 @@ const passwords2 = ["StUFf27%", "Pl3nty!", "Jai33", "shajsaUA**&&", "Pl3nty!"]
 const util = require('util');
 
 function test(test_name, actual, expected) {
-  let status;
-  if (util.isDeepStrictEqual(actual, expected)) {
-    status = "PASSED";
-  } else {
-    status = `FAILED: expected: ${util.inspect(expected)} but your function returned: ${util.inspect(actual)}`;
-  }
+    let status;
+    if (util.isDeepStrictEqual(actual, expected)) {
+        status = "PASSED";
+    } else {
+        status = `FAILED: expected: ${util.inspect(expected)} but your function returned: ${util.inspect(actual)}`;
+    }
 
-  console.log(`${test_name}: ${status}`);
+    console.log(`${test_name}: ${status}`);
 }
 
 test(
   "validatePasswords function works - case 1",
   validatePasswords(passwords1),
   [false, false, true, false, false]
-);
+ );
 
 test(
   "validatePasswords function works - case 2",

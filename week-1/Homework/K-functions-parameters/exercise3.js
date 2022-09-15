@@ -1,8 +1,8 @@
 // Write your function here
-function createGreeting(name) {
-    return `Hello, my name is ${name}`
-}
-
+function createGreeting(name){
+    const message = `Hello, my name is  ${name}`
+    return message
+    }
 var greeting = createGreeting("Daniel");
 
 console.log(greeting);

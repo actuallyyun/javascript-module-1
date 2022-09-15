@@ -1,15 +1,21 @@
-const arr = ["table", "laptop", "pencil", "phone"];
-const newArr = ["monitor", "calendar", "notes", "phone"];
+const groupOfPeople =["Ali", "Moazum", "AB", "Lucia", "Nono"];
+const secondGroup =["Seba", "Musti", "Salman", "Lucky"];
 
-const combArr = arr.concat(newArr);
-console.log(combArr.sort());
 
-function inclInArr(name, arr) {
-    if (!arr.includes(name)) {
-        return `${name} is not at the class with ${arr.join(", ")}`
-    } else {
-        return `${name} is at the class with ${arr.join(", ")}`
-    }
+const allPeople=groupOfPeople.concat(secondGroup);
+//allPeople.splice(0, 0, "NewName");
+allPeople.sort();
+console.log(allPeople);
+ const array=["AB", "Musti", "ALi", "Salman"];
+function checkIfInTheArray(name, array){
+if(array.includes(name)){ 
+   
+    return `${name} is in the class with ${array} `
+  }else{
+    
+    return `${name} is not in the class with ${array.join(", ")}` 
+  }
 }
 
-console.log(inclInArr("pencil", ["monitor", "calendar", "notes", "phone"]))
+console.log(checkIfInTheArray("AB",array))
+console.log(checkIfInTheArray("Linda",array))

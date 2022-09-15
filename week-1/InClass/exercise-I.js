@@ -1,17 +1,16 @@
-function isYearBirth(age) {
-    let currentYear = new Date().getFullYear();
-    return currentYear - age;
+function birthYear(age) {
+    const currentYear = 2022;
+    let birthYear = currentYear - age;
+    return birthYear
 }
+let year = birthYear(25)
+console.log(year);
 
-let yearBirth =  isYearBirth(34);
+//function take name and age and display a message with name, age and birth year in sentence
 
-console.log(yearBirth)
-
-function isMessage(age, name) {
-    let year = isYearBirth(age);
-    return "My name is " + name + ". " + "I was born in " + year;
+function statement(name, age) {
+    let statement = `hi, i am ${name} i am ${age} years old, i was born in ${year}`;
+    return statement
 }
-
-let message =  isMessage(34, "Hanna");
-
-console.log(message)
+let answer = statement("Abubaker", 25)
+console.log(answer)

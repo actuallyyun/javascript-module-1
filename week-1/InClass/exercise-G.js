@@ -1,13 +1,9 @@
-const numberOfStudents = 15;
-const numberOfMentors = 8;
+const students = 15;
+const teachers = 8;
+const Studentpercentage = students * 100;
+const teacherpercentage = teachers * 100;
 
-const totalNumber = numberOfStudents + numberOfMentors;
+console.log("Percentage of students:" ,Math.round(Studentpercentage / 23));
+console.log("Percentage of Teachers:" ,Math.round(teacherpercentage / 23));
 
-const percentStudents = Math.round(numberOfStudents/totalNumber * 100);
-const percentMentors = Math.round(numberOfMentors/totalNumber * 100);
-
-const messageStudents = "Percentage students: " + percentStudents + "%";
-const messageMentors = "Percentage mentors: " + percentMentors + "%";
-
-console.log(messageStudents);
-console.log(messageMentors);
+console.log("Percentage of Teachers after trunc funcationno:" ,Math.trunc(teacherpercentage / 23));

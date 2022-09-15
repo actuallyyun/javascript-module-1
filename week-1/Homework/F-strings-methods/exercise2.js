@@ -1,5 +1,5 @@
-const name = " Daniel  ";
-const myName = name.trim();
-let lengthName = myName.trim().length;
-let message = `My name is ${myName} and my name is ${lengthName} characters long`
+const name = " Abubhaker ";
+var length= name.length;
+var nametrim = name.trim();
+var message=" My name is " + nametrim +" my name is " +length + " charchters long"
 console.log(message);

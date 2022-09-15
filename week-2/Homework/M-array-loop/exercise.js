@@ -13,9 +13,24 @@ const daysOfWeek = [
   "Saturday",
   "Sunday",
 ];
-
-for(let i= 0; i < daysOfWeek.length; i++) {
-  if (daysOfWeek[i].startsWith("T")) {
-    console.log(daysOfWeek[i])
+function showDaysOfWeek(days, letter){
+  for(let d=0;d<days.length;d++)
+  {
+    if(days[d][0]===letter)
+    console.log(days[d]);
   }
 }
+showDaysOfWeek(daysOfWeek,"T")
+
+const maxNumber=[5,6,13,54,23,43,68];
+const max=0;
+function arrayMax(arr) {
+  var len = arrayMax.length, max = -Infinity;
+  while (len--) {
+    if (arrayMax[len] > max) {
+      max = arrayMax[len];
+    }
+  }
+  return max;
+};
+console.log(max);

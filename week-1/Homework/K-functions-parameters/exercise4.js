@@ -1,9 +1,9 @@
 // Declare your function first
-function addNumber(num1, num2) {
-    return num1 + num2;
+function sum(x,y){
+    return  x+y;
 }
 
 // Call the function and assign to a variable `sum`
-const sum = addNumber(13, 124);
 
-console.log(sum);
+var result = sum(3, 4);
+console.log(result);

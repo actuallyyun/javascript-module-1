@@ -1,5 +1,8 @@
-const arr = ["table", "laptop", "pencil", "phone"];
+const groupOfPeople =["Ali", "Moazum", "AB", "Lucia", "Nono"];
 
-console.log(arr.length);
-console.log(arr.unshift("paper"));
-console.log(arr.push("cap"));
+console.table(groupOfPeople);
+console.log(groupOfPeople.length);
+groupOfPeople.splice(0, 0, "NewName");
+console.log(groupOfPeople);
+groupOfPeople.push("EndName");
+console.log(groupOfPeople);

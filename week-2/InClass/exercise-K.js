@@ -1,14 +1,16 @@
-const students = [
-    "Ann",
-    "Denis",
-    "Alesya",
-    "Kate",
-    "Dasha",
-    "Anton",
-    "Vita",
+const nameOfStudents = [
+    "AB",
+    "Moazum",
+    "Ali",
+    "Asad",
+    "Gregorio",
+    "Lucia",
+    "Murtaza",
   ];
   
-  for (let i = 0; i < students.length; i++) {
-    const studentsName = "Students name is: " + students[i];
-    console.log(studentsName);
+  for (let i = 0; i < nameOfStudents.length; i++) {
+    const OfStudents = "Name of Student is: " + nameOfStudents[i];
+    
+    console.log(OfStudents);
   }
+  

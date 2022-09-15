@@ -5,22 +5,25 @@
   Update the code so that you get the expected result.
 */
 
-function isNegative(num) {
-  return num < 0 ? true : false;
+function isNegative(number) {
+  if(number<0)
+  {
+return true;
+  } else {
+    return false;
+  }
 }
+  function isBetween5and10(number){
+  if (number>=5 && number<=10)
+  {return true}
+  }
+function isShortName(name){
+  return name.length<=6;
 
-function isBetween5and10(num) {
-  return (num <= 10 && num >= 5) ? true : false;
 }
-
-function isShortName(name) {
-  return name === "Daniel" ? true : false;
+function startsWithD(name){
+ return name[0]=== "D";
 }
-
-function startsWithD(name) {
-  return name[0] === "D" ? true : false;
-}
-
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
