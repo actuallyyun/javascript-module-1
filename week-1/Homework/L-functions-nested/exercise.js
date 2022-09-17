@@ -7,7 +7,5 @@ var mentor5 = "Yohannes";
 
 function greetings(mentor) {
     mentor = mentor.toUpperCase()
-    return `HELLO ${mentor}`
+    return  return `HELLO ${mentor.toUppercase}`
 }
-
-console.log(greetings(mentor1))

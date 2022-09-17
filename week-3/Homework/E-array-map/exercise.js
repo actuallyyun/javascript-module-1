@@ -22,4 +22,3 @@ const newNumbers_4 = numbers.map(function (num) {
     return num * 100
 })
 
-console.log(newNumbers_4)
