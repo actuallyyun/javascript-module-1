@@ -6,7 +6,7 @@
 
 */
 
-let n = 10;
+let n = 3;
 
 function sumTillNum(num) {
 	let sum = 0

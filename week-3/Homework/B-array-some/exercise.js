@@ -8,7 +8,10 @@
 
 // import { exit } from 'node:process'
 
+
+
 const pairsByIndex = [[0, 3], [1, 2], [2, 1], null, [3, 0]];
+
 const pairsByIndexNoNull = [[0, 3], [1, 2], [2, 1], [3, 0]];
 
 // If there is a null value in the array exit the program with the error code
@@ -16,10 +19,6 @@ const pairsByIndexNoNull = [[0, 3], [1, 2], [2, 1], [3, 0]];
 // process.exit(1);
 
 var students = ["Islam", "Lesley", "Harun", "Rukmini"];
-
-function hasNull(array) {
-  return pairsByIndex.some(index => index === null)
-}
 
 const pairs = pairsByIndex.map(function (indexes) {
   if (hasNull(pairsByIndex)) {

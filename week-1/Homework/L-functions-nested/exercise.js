@@ -6,6 +6,6 @@ var mentor5 = "Yohannes";
 
 
 function greetings(mentor) {
-
-    return `HELLO ${mentor.toUppercase}`
+    mentor = mentor.toUpperCase()
+    return  return `HELLO ${mentor.toUppercase}`
 }

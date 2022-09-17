@@ -5,12 +5,13 @@
   The variables should have values that match the expected results.
 */
 
-var studentCount = 16;
+var studentCount = 10;
 var mentorCount = 9;
-var moreStudentsThanMentors = studentCount > mentorCount;// finish this statement
+var moreStudentsThanMentors = studentCount > mentorCount;
 
 var roomMaxCapacity = 25;
 var enoughSpaceInRoom = roomMaxCapacity <= (studentCount + mentorCount); // finish this statement
+
 
 var personA = "Daniel";
 var personB = "Irina";
